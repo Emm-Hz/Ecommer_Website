@@ -1,0 +1,76 @@
+@font-face {
+  font-family: caviar;
+  src: url(./assets/fonts/CaviarDreams.ttf);
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body,
+#root,
+.App,
+.fullHeight {
+  height: 100%;
+}
+
+*,
+::before ::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: caviar;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+a:hover {
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.main {
+  height: calc(100% - 65px);
+}
+
+.controlPanel {
+  position: relative;
+  display: inline-block;
+  width: 80%;
+  min-height: 100%;
+  padding: 3rem 0 6rem 25rem;
+  border-bottom: 1px solid #d3d3d3;
+  .sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25rem;
+    height: 100%;
+    z-index: 1;
+    border-right: 1px solid #d3d3d3;
+  }
+  .content {
+    padding: 0 10px;
+  }
+}
+
+.adminLayout {
+  height: calc(100% - 6.5rem - 5.8rem - 3.6rem);
+}
+
+.dashboardLayout {
+  height: calc(100% - 6.5rem - 5.8rem);
+}
